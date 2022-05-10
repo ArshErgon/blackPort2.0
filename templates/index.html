@@ -1,5 +1,5 @@
 <!Doctype html>
-<head>
+<head lang="eng">
     <title>ArshErgon</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -12,6 +12,11 @@
 </head>
 <body>
 <style>
+    
+    html {
+        scroll-behavior: smooth;
+    }
+
     body::-webkit-scrollbar {
 	width: 10px;
 	background-color: #FDF200  ;
@@ -280,7 +285,7 @@
         <div class="bar" id="css-bar" style="background-color: #7FFF00;"></div>
         <h6>Database</h6><span style="float: right;">%</span><input type="text" id="bar_num_sc" disabled>
         <div class="bar" id="scss-bar" style="background-color:#EFD28D;"></div>
-        <h6>Projects</h6><span style="float: right;">%</span><input type="text" id="bar_num_js" disabled>
+        <h6>Problem Solving</h6><span style="float: right;">%</span><input type="text" id="bar_num_js" disabled>
         <div class="bar" id="js-bar"
             style="background-color: #FBDA61;background-image: linear-gradient(90deg, #FBDA61 0%, #FF5ACD 100%);">
         </div>
@@ -414,7 +419,6 @@
     </div>
 </body>
 </html>
-
 
 
 
@@ -963,26 +967,26 @@
         // alert()
     
     
-        // scrollAnimation_py.play();
-        //         scrollAnimation_dj.play();
-        //         scrollAnimation_ht.play();
-        //         scrollAnimation_cs.play();
-        //         scrollAnimation_sc.play();
-        //         scrollAnimation_js.play();
-        //         scrollAnimation_psd.play();
-        //         scrollAnimation_ai.play();
-        //         scrollAnimation_dsa.play();
+        scrollAnimation_py.play();
+                scrollAnimation_dj.play();
+                scrollAnimation_ht.play();
+                scrollAnimation_cs.play();
+                scrollAnimation_sc.play();
+                scrollAnimation_js.play();
+                scrollAnimation_psd.play();
+                scrollAnimation_ai.play();
+                scrollAnimation_dsa.play();
         //         // bar animation upper
         //         // value animation down
-        //         scrollAnimation_bar_num_py.play();
-        //         scrollAnimation_bar_num_dj.play();
-        //         scrollAnimation_bar_num_ht.play();
-        //         scrollAnimation_bar_num_cs.play();
-        //         scrollAnimation_bar_num_sc.play();
-        //         scrollAnimation_bar_num_js.play();
-        //         scrollAnimation_bar_num_psd.play();
-        //         scrollAnimation_bar_num_ai.play();
-        //         scrollAnimation_bar_num_dsa.play();
+                scrollAnimation_bar_num_py.play();
+                scrollAnimation_bar_num_dj.play();
+                scrollAnimation_bar_num_ht.play();
+                scrollAnimation_bar_num_cs.play();
+                scrollAnimation_bar_num_sc.play();
+                scrollAnimation_bar_num_js.play();
+                scrollAnimation_bar_num_psd.play();
+                scrollAnimation_bar_num_ai.play();
+                scrollAnimation_bar_num_dsa.play();
     
         
         
@@ -1050,11 +1054,9 @@
           </script>
     
 <!-- Django Model JavaScripting start here -->
-<script>
-{% for js in javaScript %}
-{{ js.javascriptField|safe }}
+{% for style in styleShow %}
+{{ style.styleField|safe }}
 {% endfor %}
-</script>
 
 <!-- Endhere -->
 

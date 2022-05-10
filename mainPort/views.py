@@ -2,7 +2,7 @@ from django.shortcuts import render
 
 # Create your views here.
 
-from .models import ProjectModel, AboutMeModel, LearntModel, JavaScriptModel
+from .models import ProjectModel, AboutMeModel, LearntModel, StyleModel
 
 
 def homeView(request):
@@ -17,4 +17,4 @@ def homeView(request):
     for learn in learns:
         pass
 
-    return render(request, 'index.html', {'project':project, 'about':about, 'learn':learn, 'javaScript':JavaScriptModel.objects.all()})
+    return render(request, 'index.html', {'project':project, 'about':about, 'learn':learn, 'styleShow':StyleModel.objects.all()})
