@@ -151,3 +151,18 @@ class StyleModel(models.Model):
 
     def __str__(self):
         return self.styleField[:50]    
+
+
+
+  
+class SkillsModel(models.Model):
+  python = models.CharField(max_length=2)
+  django = models.CharField(max_length=2)
+  fsd = models.CharField(max_length=2)
+  dsa = models.CharField(max_length=2)
+  machine = models.CharField(max_length=2)
+  db = models.CharField(max_length=2)
+  problemSolving = models.CharField(max_length=2)
+  java = models.CharField(max_length=2)
+  graphicDesign = models.CharField(max_length=2)
+  

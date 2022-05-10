@@ -2,11 +2,11 @@ from django.shortcuts import render
 
 # Create your views here.
 
-from .models import ProjectModel, AboutMeModel, LearntModel, StyleModel
+from .models import ProjectModel, AboutMeModel, LearntModel, StyleModel, SkillsModel
 
 
 def homeView(request):
-    project, about, learn = '', '', ''
+    project, about, learn, skills = '', '', '', ''
     projects = ProjectModel.objects.all()
     aboutinfos = AboutMeModel.objects.all()
     learns = LearntModel.objects.all()
@@ -16,5 +16,8 @@ def homeView(request):
         pass
     for learn in learns:
         pass
+    for skills in SkillsModel.objects.all():
+        pass
 
-    return render(request, 'index.html', {'project':project, 'about':about, 'learn':learn, 'styleShow':StyleModel.objects.all()})
+
+    return render(request, 'index.html', {'project':project, 'about':about, 'learn':learn, 'styleShow':StyleModel.objects.all(), 'skills':skills})
