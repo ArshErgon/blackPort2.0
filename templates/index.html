@@ -45,6 +45,7 @@
 
 
 </style>
+<section id="navbar">
     <div class="navbar" style="position: fixed;">
         <div style="margin:0px auto;">
             <a href="{% url 'home' %}">
@@ -66,6 +67,9 @@
             </a>
         </div>
     </div>
+</section>
+
+<section id="myName">
 <div class="my_name" style="margin: 0px auto;">
 
 
@@ -218,9 +222,10 @@
 
 
     <!-- EndSVG -->
-
+</section>
 
 </div><br><br>
+<section id="aboutMe">
 <h1 class="heading_tag" id="hide_for_sometime" style="bottom:-20px !important;">About me</h1>
 <div class="container" id="hide_for_sometime">
     <div class="col-sm-6" style="margin: 0px auto;">
@@ -247,9 +252,10 @@
         </div>
     </div>
 </div>
-
+</section>
 <br>
 
+<section id="projects">
 <h1 class="heading_tag" id="hide_for_sometime">Projects</h1>
 
 <!-- Swiper -->
@@ -267,12 +273,12 @@
     </div>
 </div>
 </div>
-
+</section>
 <!-- End -->
 
 
 <!-- Skills start here -->
-
+<section id="skills">
 <div id="hide_for_sometime" class="container"
     style="padding-bottom: 10px;box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); border-radius: 10%;">
     <h1 class="heading_tag">Skills</h1>
@@ -305,11 +311,11 @@
 
 
     </div>
-
+</section>
     <!-- Endhere -->
 
     <!-- What I've learnt? -->
-
+<section id="learnt">
     <div style="margin-bottom:40px" class="" id="hide_for_sometime">
         <h1 class="heading_tag">What I've learnt?</h1>
         <div class="col-sm-8" style="margin: auto;">
@@ -321,9 +327,9 @@
         </div>
     </div>
     <br>
-
+</section>
     <!-- Contact me -->
-
+<section id="contact">
     <div id="hide_for_sometime"><br>
         
         <h1 class="heading_tag" id="google"><a href="https://www.google.com/search?q=arshergon&sxsrf=ALiCzsZGtB0tW8Vdl723F7tQGhmklaVbDQ%3A1652102916861&source=hp&ei=BBd5YoyjMob40gTLq5-4Bw&iflsig=AJiK0e8AAAAAYnklFMDaM88UUspEpZvb_Vz8ATvCWF0A&oq=arsher&gs_lcp=Cgdnd3Mtd2l6EAMYADIECCMQJzIFCC4QgAQyBwgAELEDEAoyBQgAEIAEMgoILhCxAxDUAhAKMgQIABAKMgcIABCxAxAKMgcIABCxAxAKMgcIABCxAxAKMgQIABAKOg0ILhDHARCjAhDqAhAnOgcIIxDqAhAnOgUIABCRAjoRCC4QgAQQsQMQgwEQxwEQ0QM6CwgAEIAEELEDEIMBOggIABCxAxCDAToICAAQgAQQsQM6CwguEIAEELEDEIMBOggILhCABBCxAzoFCAAQsQM6CwguEIAEEMcBEK8BOgcIABCABBAKUKUwWOg-YL1PaAFwAHgAgAHQA4gBpw2SAQcyLTQuMS4xmAEAoAEBsAEK&sclient=gws-wiz" target="_blank">Google ME!</a></h1>
@@ -340,7 +346,7 @@
 
 </div>
 
-
+</section>
 
 
 
@@ -663,7 +669,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.1.0/anime.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.13/dist/sweetalert2.all.min.js"></script>
     <script>
-    
+
         anime({
             targets: '#google',
             direction: 'alternate',
@@ -936,92 +942,6 @@
             easing: 'easeInOutBack',
         });
     
-        // Don't ask what I did here
-        // x = 1;
-        // window.addEventListener("scroll", Event => {
-        //     let again = false;
-        //     if (window.innerWidth <= 600) {
-        //         if (!again) {
-        //             if (!again) {
-        //                 if (window.scrollY >= '900') {
-        //                     x += 1
-        //                     start();
-        //                     // alert(window.scrollY)
-        //                     return x;
-        //                 }
-        //             }
-        //         }
-        //     }
-        //     else {
-        //         if (!again) {
-        //             if (!again) {
-        //                 if (window.scrollY >= '900') {
-        //                     x += 1
-        //                     start();
-        //                     return x;
-        //                 }
-        //             }
-        //         }
-    
-        //     }
-    
-            // window.removeEventListener("scroll")
-        // })
-    
-        // alert()
-    
-    
-        scrollAnimation_py.play();
-                scrollAnimation_dj.play();
-                scrollAnimation_ht.play();
-                scrollAnimation_cs.play();
-                scrollAnimation_sc.play();
-                scrollAnimation_js.play();
-                scrollAnimation_psd.play();
-                scrollAnimation_ai.play();
-                scrollAnimation_dsa.play();
-        //         // bar animation upper
-        //         // value animation down
-                scrollAnimation_bar_num_py.play();
-                scrollAnimation_bar_num_dj.play();
-                scrollAnimation_bar_num_ht.play();
-                scrollAnimation_bar_num_cs.play();
-                scrollAnimation_bar_num_sc.play();
-                scrollAnimation_bar_num_js.play();
-                scrollAnimation_bar_num_psd.play();
-                scrollAnimation_bar_num_ai.play();
-                scrollAnimation_bar_num_dsa.play();
-    
-        
-        
-        function start() {
-            if (x === 2) {
-                scrollAnimation_py.play();
-                scrollAnimation_dj.play();
-                scrollAnimation_ht.play();
-                scrollAnimation_cs.play();
-                scrollAnimation_sc.play();
-                scrollAnimation_js.play();
-                scrollAnimation_psd.play();
-                scrollAnimation_ai.play();
-                scrollAnimation_dsa.play();
-                // bar animation upper
-                // value animation down
-                scrollAnimation_bar_num_py.play();
-                scrollAnimation_bar_num_dj.play();
-                scrollAnimation_bar_num_ht.play();
-                scrollAnimation_bar_num_cs.play();
-                scrollAnimation_bar_num_sc.play();
-                scrollAnimation_bar_num_js.play();
-                scrollAnimation_bar_num_psd.play();
-                scrollAnimation_bar_num_ai.play();
-                scrollAnimation_bar_num_dsa.play();
-            }
-        }
-    
-    
-            // endBar
-    
     </script>
     
     
@@ -1065,78 +985,61 @@
 <!-- Endhere -->
 
 
-
-
-
-
-
-
-<!-- 
-<style>
-
-/* navbar */
-
-#navbar {
-    position: fixed;
-    background-color: #201C29;
-    align-content: center;
-    height: 50px;
-    width: 100%;
-    margin: 0px auto;
-    text-align: center;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    z-index: 3;
-}
-
-
-/* main head */
-
-html, body {
-    background-color: #100E17 !important;
-    color: white !important;
-    
-}
-
-
-/* Footer class */
-
-
-
-#page-container {
-    position: relative;
-    min-height:100vh;
-}
-
-#content-wrap {
-    padding-bottom:2.5rem;
-}
-
-#footer {
-    position: relative;
-    bottom: 0%;
-    width:100%;
-    height:100%;
-    /* padding-bottom: -90pt; */
-}
-
-</style>
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.1.0/anime.min.js"></script>
 <script>
-     // Start here ball navbar-animation
 
-     anime({
-        targets: '#ball',
-        translateX: 10,
-        duration: 2000,
-        direction: 'alternate',
-        easing: 'easeInOutBack',
-        delay: 50,
-        loop: true,
-        scale: 2.5,
-    });
+    var element = document.querySelector("#skills");
+    
+    function isInViewPort(element) {
+    // Get the bounding client rectangle position in the viewport
+    var bounding = element.getBoundingClientRect();
 
-    // End narbar animation Ball here
-    // Start animation of bar
-</script> -->
+    // Checking part. Here the code checks if it's *fully* visible
+    // Edit this part if you just want a partial visibility
+    if (
+        bounding.top >= 0 &&
+        bounding.left >= 0 &&
+        bounding.right <= (window.innerWidth || document.documentElement.clientWidth) &&
+        bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+    ) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+var element = document.querySelector("#skills");
+
+if (isInViewPort(element)) {
+    alert('true')
+}
+
+let x = 1
+document.addEventListener('scroll', function(e){
+    if (isInViewPort(element) && x != 2) {
+                scrollAnimation_py.play();
+                scrollAnimation_dj.play();
+                scrollAnimation_ht.play();
+                scrollAnimation_cs.play();
+                scrollAnimation_sc.play();
+                scrollAnimation_js.play();
+                scrollAnimation_psd.play();
+                scrollAnimation_ai.play();
+                scrollAnimation_dsa.play();
+        //         // bar animation upper
+        //         // value animation down
+                scrollAnimation_bar_num_py.play();
+                scrollAnimation_bar_num_dj.play();
+                scrollAnimation_bar_num_ht.play();
+                scrollAnimation_bar_num_cs.play();
+                scrollAnimation_bar_num_sc.play();
+                scrollAnimation_bar_num_js.play();
+                scrollAnimation_bar_num_psd.play();
+                scrollAnimation_bar_num_ai.play();
+                scrollAnimation_bar_num_dsa.play();
+                x += 1
+    }
+
+ }, true);
+
+
+</script>
