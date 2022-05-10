@@ -287,24 +287,24 @@
         <div class="bar" id="python-bar" style="background-color: #F5D300;"></div>
         <h6>Django</h6><span style="float: right;">%</span><input type="text" id="bar_num_dj" disabled>
         <div class="bar" id="django-bar" style="background-color: #FD2206;"></div>
-        <h6>Full Stack Development</h6><span style="float: right;">%</span><input type="text" id="bar_num_dsa" disabled>
-        <div class="bar" id="dsa-bar" style="background-color: #FF2381;"></div>
-        <h6>DSA</h6><span style="float: right;">%</span><input type="text" id="bar_num_ht" disabled>
-        <div class="bar" id="html-bar" style="background-color: #13CA91;"></div>
-        <h6>ML/AI</h6><span style="float: right;">%</span><input type="text" id="bar_num_cs" disabled>
-        <div class="bar" id="css-bar" style="background-color: #7FFF00;"></div>
-        <h6>Database</h6><span style="float: right;">%</span><input type="text" id="bar_num_sc" disabled>
-        <div class="bar" id="scss-bar" style="background-color:#EFD28D;"></div>
-        <h6>Problem Solving</h6><span style="float: right;">%</span><input type="text" id="bar_num_js" disabled>
-        <div class="bar" id="js-bar"
+        <h6>Full Stack Development</h6><span style="float: right;">%</span><input type="text" id="bar_num_fsd" disabled>
+        <div class="bar" id="fsd-bar" style="background-color: #FF2381;"></div>
+        <h6>DSA</h6><span style="float: right;">%</span><input type="text" id="bar_num_dsa" disabled>
+        <div class="bar" id="dsa-bar" style="background-color: #13CA91;"></div>
+        <h6>ML/AI</h6><span style="float: right;">%</span><input type="text" id="bar_num_ml" disabled>
+        <div class="bar" id="ml-bar" style="background-color: #7FFF00;"></div>
+        <h6>Database</h6><span style="float: right;">%</span><input type="text" id="bar_num_db" disabled>
+        <div class="bar" id="db-bar" style="background-color:#EFD28D;"></div>
+        <h6>Problem Solving</h6><span style="float: right;">%</span><input type="text" id="bar_num_pb" disabled>
+        <div class="bar" id="pb-bar"
             style="background-color: #FBDA61;background-image: linear-gradient(90deg, #FBDA61 0%, #FF5ACD 100%);">
         </div>
-        <h6>Java</h6><span style="float: right;">%</span><input type="text" id="bar_num_psd" disabled>
-        <div class="bar" id="psd-bar"
+        <h6>Java</h6><span style="float: right;">%</span><input type="text" id="bar_num_java" disabled>
+        <div class="bar" id="java-bar"
             style="background-color: #21D4FD;background-image: linear-gradient(45deg, #21D4FD 0%, #B721FF 100%);">
         </div>
-        <h6>Graphic Design</h6><span style="float: right;">%</span><input type="text" id="bar_num_ai" disabled>
-        <div class="bar" id="ai-bar"
+        <h6>Graphic Design</h6><span style="float: right;">%</span><input type="text" id="bar_num_graphic" disabled>
+        <div class="bar" id="graphic-bar"
             style="background-color: #FFE53B;background-image: linear-gradient(90deg, #FFE53B 0%, #FF2525 74%);">
         </div>
     </div>
@@ -619,7 +619,15 @@
         width: 0px;
     }
     
-    #bar_num_py, #bar_num_dj, #bar_num_ht, #bar_num_cs, #bar_num_sc, #bar_num_js, #bar_num_psd, #bar_num_ai, #bar_num_dsa {
+    #bar_num_py, 
+    #bar_num_dj, 
+    #bar_num_ml, 
+    #bar_num_db, 
+    #bar_num_pb, 
+    #bar_num_java, 
+    #bar_num_graphic, 
+    #bar_num_fsd, 
+    #bar_num_dsa {
         outline: none;
         border: none;
         background-color: unset;
@@ -763,7 +771,7 @@
         });
     
         var scrollAnimation_ht = anime({
-            targets: '#html-bar',
+            targets: '#fsd-bar',
             width: '{{ skills.fsd }}%',
             easing: 'easeInOutBack',
             borderRadius: ['0%', '50px'],
@@ -773,7 +781,7 @@
         });
     
         var scrollAnimation_cs = anime({
-            targets: '#css-bar',
+            targets: '#dsa-bar',
             width: '{{ skills.dsa }}%',
             easing: 'easeInOutBack',
             borderRadius: ['0%', '50px'],
@@ -784,7 +792,7 @@
         });
     
         var scrollAnimation_sc = anime({
-            targets: '#scss-bar',
+            targets: '#ml-bar',
             width: '{{ skills.machine }}%',
             easing: 'easeInOutBack',
             borderRadius: ['0%', '50px'],
@@ -795,7 +803,7 @@
         });
     
         var scrollAnimation_js = anime({
-            targets: '#js-bar',
+            targets: '#db-bar',
             width: '{{ skills.db }}%',
             easing: 'easeInOutBack',
             borderRadius: ['0%', '50px'],
@@ -806,7 +814,7 @@
         });
     
         var scrollAnimation_psd = anime({
-            targets: '#psd-bar',
+            targets: '#pb-bar',
             width: '{{ skills.problemSolving }}%',
             easing: 'easeInOutBack',
             borderRadius: ['0%', '50px'],
@@ -816,7 +824,7 @@
         });
     
         var scrollAnimation_ai = anime({
-            targets: '#ai-bar',
+            targets: '#java-bar',
             width: '{{ skills.java }}%',
             easing: 'easeInOutBack',
             borderRadius: ['0%', '50px'],
@@ -826,7 +834,7 @@
         });
     
         var scrollAnimation_dsa = anime({
-            targets: '#dsa-bar',
+            targets: '#graphic-bar',
             width: '{{ skills.graphicDesign }}%',
             easing: 'easeInOutBack',
             borderRadius: ['0%', '50px'],
@@ -840,7 +848,7 @@
         // Number animation, values
         var scrollAnimation_bar_num_py = anime({
             targets: '#bar_num_py',
-            value: [0, '80'],
+            value: [0, '{{ skills.python }}'],
             round: 1,
             delay: 100,
             duration: 2010,
@@ -850,7 +858,7 @@
     
         var scrollAnimation_bar_num_dj = anime({
             targets: '#bar_num_dj',
-            value: [0, '50'],
+            value: [0, '{{ skills.django }}'],
             round: 1,
             delay: 200,
             duration: 2010,
@@ -859,8 +867,8 @@
         });
     
         var scrollAnimation_bar_num_ht = anime({
-            targets: '#bar_num_ht',
-            value: [0, '90'],
+            targets: '#bar_num_fsd',
+            value: [0, '{{ skills.fsd }}'],
             round: 1,
             delay: 300,
             duration: 2010,
@@ -869,8 +877,8 @@
         });
     
         var scrollAnimation_bar_num_cs = anime({
-            targets: '#bar_num_cs',
-            value: [0, '50'],
+            targets: '#bar_num_dsa',
+            value: [0, '{{ skills.dsa }}'],
             round: 1,
             delay: 400,
             duration: 2010,
@@ -879,8 +887,8 @@
         });
     
         var scrollAnimation_bar_num_sc = anime({
-            targets: '#bar_num_sc',
-            value: [0, '40'],
+            targets: '#bar_num_ml',
+            value: [0, '{{ skills.machine }}'],
             round: 1,
             delay: 500,
             duration: 2010,
@@ -889,18 +897,18 @@
         });
     
         var scrollAnimation_bar_num_js = anime({
-            targets: '#bar_num_js',
-            value: [0, '60'],
+            targets: '#bar_num_db',
+            value: [0, '{{ skills.db }}'],
             round: 1,
             delay: 600,
             duration: 2010,
             easing: 'easeInOutExpo',
             autoplay: false,
         });
-    
+
         var scrollAnimation_bar_num_psd = anime({
-            targets: '#bar_num_psd',
-            value: [0, '80'],
+            targets: '#bar_num_pb',
+            value: [0, '{{ skills.problemSolving }}'],
             round: 1,
             delay: 700,
             duration: 2010,
@@ -909,8 +917,18 @@
         })
     
         var scrollAnimation_bar_num_ai = anime({
-            targets: '#bar_num_ai',
-            value: [0, '90'],
+            targets: '#bar_num_java',
+            value: [0, '{{ skills.java }}'],
+            round: 1,
+            delay: 700,
+            duration: 2010,
+            easing: 'easeInOutExpo',
+            autoplay: false,
+        })
+    
+        var scrollAnimation_bar_num_java = anime({
+            targets: '#bar_num_graphic',
+            value: [0, '{{ skills.graphicDesign }}'],
             round: 1,
             delay: 800,
             duration: 2010,
@@ -918,15 +936,7 @@
             autoplay: false,
         })
     
-         var scrollAnimation_bar_num_dsa = anime({
-            targets: '#bar_num_dsa',
-            value: [0, '90'],
-            round: 1,
-            delay: 800,
-            duration: 2010,
-            easing: 'easeInOutExpo',
-            autoplay: false,
-        })
+         
     
         // have Ended all animation here
     
@@ -1035,7 +1045,7 @@ document.addEventListener('scroll', function(e){
                 scrollAnimation_bar_num_js.play();
                 scrollAnimation_bar_num_psd.play();
                 scrollAnimation_bar_num_ai.play();
-                scrollAnimation_bar_num_dsa.play();
+                scrollAnimation_bar_num_java.play();
                 x += 1
     }
 
