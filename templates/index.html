@@ -265,7 +265,7 @@
 
     <!-- Swiper -->
 
-    <div class="container" style="height:400px;margin-bottom: 60px;">
+    <div class="container" style="height:400px;margin-bottom: 30px;">
     <div class="swiper mySwiper">
         <div class="swiper-wrapper">
             {{ project.projectField|safe|capfirst }}
@@ -289,7 +289,7 @@
         <div class="bar" id="django-bar" style="background-color: #FD2206;"></div>
         <h6>Full Stack Development</h6><span style="float: right;">%</span><input type="text" id="bar_num_fsd" disabled>
         <div class="bar" id="fsd-bar" style="background-color: #FF2381;"></div>
-        <h6>DSA</h6><span style="float: right;">%</span><input type="text" id="bar_num_dsa" disabled>
+        <h6>Data Structure & Algorithms</h6><span style="float: right;">%</span><input type="text" id="bar_num_dsa" disabled>
         <div class="bar" id="dsa-bar" style="background-color: #13CA91;"></div>
         <h6>ML/AI</h6><span style="float: right;">%</span><input type="text" id="bar_num_ml" disabled>
         <div class="bar" id="ml-bar" style="background-color: #7FFF00;"></div>
@@ -523,7 +523,7 @@
     
     .swiper {
         width: 100%;
-        padding-top: 50px;
+        padding-top: 10px;
         padding-bottom: 50px;
       }
     
@@ -850,7 +850,7 @@
             targets: '#bar_num_py',
             value: [0, '{{ skills.python }}'],
             round: 1,
-            delay: 100,
+            delay: 10,
             duration: 2010,
             easing: 'easeInOutExpo',
             autoplay: false,
@@ -860,7 +860,7 @@
             targets: '#bar_num_dj',
             value: [0, '{{ skills.django }}'],
             round: 1,
-            delay: 200,
+            delay: 20,
             duration: 2010,
             easing: 'easeInOutExpo',
             autoplay: false,
@@ -870,7 +870,7 @@
             targets: '#bar_num_fsd',
             value: [0, '{{ skills.fsd }}'],
             round: 1,
-            delay: 300,
+            delay: 30,
             duration: 2010,
             easing: 'easeInOutExpo',
             autoplay: false,
@@ -880,7 +880,7 @@
             targets: '#bar_num_dsa',
             value: [0, '{{ skills.dsa }}'],
             round: 1,
-            delay: 400,
+            delay: 40,
             duration: 2010,
             easing: 'easeInOutExpo',
             autoplay: false,
@@ -890,7 +890,7 @@
             targets: '#bar_num_ml',
             value: [0, '{{ skills.machine }}'],
             round: 1,
-            delay: 500,
+            delay: 50,
             duration: 2010,
             easing: 'easeInOutExpo',
             autoplay: false,
@@ -900,7 +900,7 @@
             targets: '#bar_num_db',
             value: [0, '{{ skills.db }}'],
             round: 1,
-            delay: 600,
+            delay: 60,
             duration: 2010,
             easing: 'easeInOutExpo',
             autoplay: false,
@@ -910,7 +910,7 @@
             targets: '#bar_num_pb',
             value: [0, '{{ skills.problemSolving }}'],
             round: 1,
-            delay: 700,
+            delay: 70,
             duration: 2010,
             easing: 'easeInOutExpo',
             autoplay: false,
@@ -920,7 +920,7 @@
             targets: '#bar_num_java',
             value: [0, '{{ skills.java }}'],
             round: 1,
-            delay: 700,
+            delay: 80,
             duration: 2010,
             easing: 'easeInOutExpo',
             autoplay: false,
@@ -930,7 +930,7 @@
             targets: '#bar_num_graphic',
             value: [0, '{{ skills.graphicDesign }}'],
             round: 1,
-            delay: 800,
+            delay: 90,
             duration: 2010,
             easing: 'easeInOutExpo',
             autoplay: false,
@@ -1019,9 +1019,7 @@
 
 var element = document.querySelector("#skills");
 
-if (isInViewPort(element)) {
-    alert('true')
-}
+
 
 let x = 1
 document.addEventListener('scroll', function(e){
