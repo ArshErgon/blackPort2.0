@@ -231,22 +231,8 @@
     <div class="col-sm-6" style="margin: 0px auto;">
         <div class="col-small" style="text-align: center;position: static;">
 
-                <!--?xml version="1.0" standalone="no"?--> 
-                <svg id="sw-js-blob-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"  style="position:relative;">
-                    <defs>
-                        <linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">
-                            <stop id="stop1" stop-color="rgba(255, 0, 85, 1)" offset="0%"></stop>
-                            <stop id="stop2" stop-color="rgba(255, 0, 85, 1)" offset="100%"></stop>
-                        </linearGradient>
-                    </defs>
-                    <path fill="url(#sw-gradient)"
-                        d="M21.9,-39.5C27.4,-34.7,30.4,-27,33.4,-19.9C36.4,-12.9,39.5,-6.4,39.7,0.1C39.9,6.7,37.3,13.4,34,19.9C30.7,26.4,26.6,32.8,20.8,36.7C15,40.7,7.5,42.3,0.3,41.8C-7,41.3,-13.9,38.7,-20.3,35.1C-26.8,31.5,-32.7,26.9,-37.3,20.9C-42,14.8,-45.4,7.4,-45.9,-0.3C-46.4,-8,-44,-16,-39.4,-22.1C-34.7,-28.2,-28,-32.4,-21,-36.5C-14.1,-40.5,-7.1,-44.2,0.5,-45.2C8.2,-46.1,16.3,-44.3,21.9,-39.5Z"
-                        width="100%" height="100%" transform="translate(50 50)" stroke-width="0" style="transition: all 0.3s ease 0s;"
-                        stroke="url(#sw-gradient)">
-                    </path>
-                </svg>
-                    <p id="svg-txt" style="top:15px;text-overflow: inherit;text-align:center;margin:0px auto;right:20px;">{{ about.aboutField|capfirst|safe }}</p>
-
+            <img src="http://drive.google.com/uc?export=view&id=1oR3H-XWkvvhZL1lvQ0OtVBPKPvntKNbw" alt="none" width="90%"/>
+            
             </div>
         </div>
         </div>
@@ -316,7 +302,7 @@
 
     <!-- What I've learnt? -->
 <section id="learnt">
-    <div style="margin-bottom:40px" class="" id="hide_for_sometime">
+    <div style="margin-bottom:40px" class="learnField" id="learnField">
         <h1 class="heading_tag">What I've learnt?</h1>
         <div class="col-sm-8" style="margin: auto;">
             <div class="container">
@@ -331,8 +317,7 @@
     <!-- Contact me -->
 <section id="contact">
     <div id="hide_for_sometime"><br>
-        
-        <h1 class="heading_tag" id="google"><a href="https://www.google.com/search?q=arshergon&sxsrf=ALiCzsZGtB0tW8Vdl723F7tQGhmklaVbDQ%3A1652102916861&source=hp&ei=BBd5YoyjMob40gTLq5-4Bw&iflsig=AJiK0e8AAAAAYnklFMDaM88UUspEpZvb_Vz8ATvCWF0A&oq=arsher&gs_lcp=Cgdnd3Mtd2l6EAMYADIECCMQJzIFCC4QgAQyBwgAELEDEAoyBQgAEIAEMgoILhCxAxDUAhAKMgQIABAKMgcIABCxAxAKMgcIABCxAxAKMgcIABCxAxAKMgQIABAKOg0ILhDHARCjAhDqAhAnOgcIIxDqAhAnOgUIABCRAjoRCC4QgAQQsQMQgwEQxwEQ0QM6CwgAEIAEELEDEIMBOggIABCxAxCDAToICAAQgAQQsQM6CwguEIAEELEDEIMBOggILhCABBCxAzoFCAAQsQM6CwguEIAEEMcBEK8BOgcIABCABBAKUKUwWOg-YL1PaAFwAHgAgAHQA4gBpw2SAQcyLTQuMS4xmAEAoAEBsAEK&sclient=gws-wiz" target="_blank">Google ME!</a></h1>
+        <br>
         <div class="col-sm-4" style="margin:0 auto;"><br>
                 <div class="row">
                     <a id="social_tag" href="https://www.github.com/arshergon/" target="blank" style="margin:auto !important;"><i class="fa fa-github" id="social_tag" style="margin:auto !important;"></i></a>
@@ -454,16 +439,14 @@
             width:70% !important;
         }
     
-        #sw-js-blob-svg {
-        width:30%;
-    }
+        #learnField {
+            padding-bottom:60px;
+        }
     
     
     }
     
-    #sw-js-blob-svg {
-        width:50%;
-    }
+    
     
     #svg-txt {
         position:absolute;
@@ -688,16 +671,6 @@
             scale:1.6,
         });
     
-    
-        anime({
-        targets: '#sw-js-blob-svg',
-        direction: 'alternate',
-        easing: "easeInOutSine",
-        loop:true,
-        duration:3000,
-        rotateZ:150,
-        scale:1.5,
-        });
     
     
         // for svg animation
