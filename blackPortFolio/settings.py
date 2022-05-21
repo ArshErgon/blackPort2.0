@@ -28,7 +28,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', '.herokuapp.com', '*']
 
-# SITE_ID = 1
+SITE_ID = 1
 
 
 # Application definitionpip 
@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
+    'django.contrib.sitemaps',
     'mainPort',
 ]
 
@@ -127,15 +129,15 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-# CORS_REPLACE_HTTPS_REFERER      = True
-# HOST_SCHEME                     = "https://"
-# SECURE_PROXY_SSL_HEADER         = ('HTTP_X_FORWARDED_PROTO', 'https')
-# SECURE_SSL_REDIRECT             = True
-# SESSION_COOKIE_SECURE           = True
-# CSRF_COOKIE_SECURE              = True
-# SECURE_HSTS_INCLUDE_SUBDOMAINS  = True
-# SECURE_HSTS_SECONDS             = 1000000
-# SECURE_FRAME_DENY               = True
+CORS_REPLACE_HTTPS_REFERER      = True
+HOST_SCHEME                     = "https://"
+SECURE_PROXY_SSL_HEADER         = ('HTTP_X_FORWARDED_PROTO', 'https')
+SECURE_SSL_REDIRECT             = True
+SESSION_COOKIE_SECURE           = True
+CSRF_COOKIE_SECURE              = True
+SECURE_HSTS_INCLUDE_SUBDOMAINS  = True
+SECURE_HSTS_SECONDS             = 1000000
+SECURE_FRAME_DENY               = True
 
 
 django_heroku.settings(locals())
