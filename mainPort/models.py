@@ -6,7 +6,7 @@ from django.db import models
 class ProjectModel(models.Model):
     projectField = models.TextField(
         default= """ 
-        
+
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -94,3 +94,6 @@ class SEO(models.Model):
 
 
   
+
+class newHome(models.Model):
+  newField = models.TextField() 

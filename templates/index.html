@@ -237,25 +237,26 @@
 </section>
 <br>
 
+
 <section id="projects">
-<h1 class="heading_tag" id="hide_for_sometime">Projects</h1>
-
-<!-- Swiper -->
-
-    <div id="hide_for_sometime" class="col-md-6" id="project"
-    style="padding: 0;margin: 20px auto;box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);border-radius: 20%;">
-
+    <h1 class="heading_tag" id="hide_for_sometime">Projects</h1>
+    
     <!-- Swiper -->
-
-    <div class="container" style="height:300px;margin-bottom: 20px;">
-    <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-            {{ project.projectField|safe|capfirst }}
+    
+        <div id="hide_for_sometime" class="col-md-6" id="project"
+        style="padding: 0;margin: 20px auto;box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);border-radius: 20%;">
+    
+        <!-- Swiper -->
+    
+        <div class="container" style="height:400px;margin-bottom: 30px;">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                {{ project.projectField|safe|capfirst }}
+            </div>
         </div>
     </div>
-</div>
-</div>
-</section>
+    </div>
+    </section>
 <!-- End -->
 
 
@@ -1019,7 +1020,9 @@
     
 <!-- Django Model JavaScripting start here -->
 {% for style in styleShow %}
-{{ style.styleField|safe }}
+{% if style.styleField %}
+    {{ style.styleField|safe }}
+{% endif %}
 {% endfor %}
 
 <!-- Endhere -->

@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.urls import path
 from django.contrib.sitemaps.views import sitemap
 
-from mainPort.views import homeView
+from mainPort.views import homeView, newHome
 from mainPort.sitemaps import StaticViewSitemap
 
 
@@ -28,6 +28,7 @@ sitemaps = {
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', homeView, name='home'),
+    path('home/', newHome, name='newHome'),
     path('sitemap.xml/', sitemap, {'sitemaps':sitemaps}, name='django.contrib.sitemaps.views.sitemap'),
     path('sitemaps.xml/', sitemap, {'sitemaps':sitemaps}, name='django.contrib.sitemaps.views.sitemap'),
 
