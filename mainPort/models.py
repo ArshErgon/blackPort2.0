@@ -6,44 +6,14 @@ from django.db import models
 class ProjectModel(models.Model):
     projectField = models.TextField(
         default= """ 
-        <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-              <img src="https://drive.google.com/uc?export=view&id=1m09zIqXaCEuN_zEwgYgXwVNJ2g5iskFh" alt="" />
-            <center><em>School Management</em></center>
-            
-          <div class="swiper-slide">
-            <img src="https://drive.google.com/uc?export=view&id=1cyW0esSTcYLR-SiUv--Pd5RzW-i0bStG" alt="" />
-            <center><em>Arshskool</em></center>
-
-          </div>
-          <div class="swiper-slide">
-            <img src="https://drive.google.com/uc?export=view&id=1QyxnsKv6smF2NmABYhdx3ci3ZGPX9g_p" alt="" />
-            <center><em>Donation App</em></center>
-
-          </div>
-          <div class="swiper-slide">
-            <img src="https://drive.google.com/uc?export=view&id=11_KCAaYyeNgPUAL7kbPJ1ybuWNzxp43j" alt="" />
-            <center><em>Phishing Google SignIn</em></center>
-
-          </div>
-        </div>
-        <div class="swiper-pagination"></div>
-      </div>
-      </div>
-    </div>
-    </div>
-
-
-
-    <div class="swiper mySwiper">
+      <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <img src="https://drive.google.com/uc?export=view&id=1m09zIqXaCEuN_zEwgYgXwVNJ2g5iskFh" alt="SchoolManagement" />
             <center><em>School Management</em></center>
           </div>
           <div class="swiper-slide">
-            1<img src="https://drive.google.com/uc?export=view&id=1cyW0esSTcYLR-SiUv--Pd5RzW-i0bStG" alt="Arshskool" />
+            <img src="https://drive.google.com/uc?export=view&id=1cyW0esSTcYLR-SiUv--Pd5RzW-i0bStG" alt="Arshskool" />
             <center><em>Arshskool</em></center>
           </div>
           <div class="swiper-slide">
