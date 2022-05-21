@@ -79,4 +79,19 @@ class SkillsModel(models.Model):
   problemSolving = models.CharField(max_length=2)
   java = models.CharField(max_length=2)
   graphicDesign = models.CharField(max_length=2)
+
+
+class SEO(models.Model):
+  textArea = models.TextField(default="""
+  <title>ArshErgon</title>
+    <meta charset="utf-8">
+    <meta name="TITLE" content="ArshErgon">
+    <meta name="creator" content="ArshErgon">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="KEYWORDS" content="arshergon, programmer, web development">
+    <meta name="DESCRIPTION" content="ArshErgon is a web developer and designer based in Dehradun, Uttarakhand, India. He is a self-taught web developer and designer with a background in graphic design and digital media.">
+  """
+  )
+
+
   
