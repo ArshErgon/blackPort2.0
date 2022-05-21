@@ -6,6 +6,7 @@ from django.db import models
 class ProjectModel(models.Model):
     projectField = models.TextField(
         default= """ 
+        
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -30,16 +31,8 @@ class ProjectModel(models.Model):
       </div>
     </div>
     </div>
-
-
-
-
-
-
-
-
-
-                    """
+    
+  """
     
     
     )

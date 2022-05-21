@@ -3,6 +3,7 @@
     {% for seo in seoField %}
         {{ seo.textArea|safe }}
     {% endfor %}
+    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -475,9 +476,233 @@
 
     /* Fixed bottom footer */
     
-    @media only screen and (max-width:600px){#svg-footer{width:100%;height:30%}#svg-txt{position:absolute;left:0;right:0;z-index:inherit;text-align:justify;width:70% !important}#learnField{padding-bottom:60px}}#svg-txt{position:absolute;top:90px;left:10px;z-index:inherit;margin-right:20px;width:60%}#svg-footer{width:100%;height:65%}#footer{margin-top:30px;width:100% !important;text-align:left;font-family:sans-serif;font-weight:700;font-size:16px;bottom:0 !important;position:inherit}.header,#header{margin-bottom:0}html,body{background-color:#100e17 !important;color:#fff !important;overflow-x:hidden;height:100%;margin:0}a,a:hover{color:#fff !important;text-decoration:none !important}.swiper{width:100%;padding-top:10px;padding-bottom:50px}.swiper-slide{background-position:center;background-size:cover;width:300px;height:150px}.swiper-slide img{display:block;width:100%}.navbar{background-color:#201c29;align-content:center;height:50px;width:100%;margin:0 auto;text-align:center;box-shadow:0 10px 20px rgba(0,0,0,.19),0 6px 6px rgba(0,0,0,.23);z-index:3}
-@media only screen and (max-width:600px){#svg-footer{width:100% !important;height:17.5% !important}.my_name{width:80% !important}.st0-back{width:60% !important}.col-small{padding-bottom:40px;text-align:center}#project,#hide_for_sometime{opacity:0}}#project,#hide_for_sometime{opacity:0}#project{margin-bottom:15px}.my_name{padding-top:90pt;width:50%}.col-small{margin:0 auto;text-align:center}.heading_tag{padding:40px 0 15px;color:#fff;font-family:'Amatic SC';text-align:center;font-size:40px}.bar{height:30px;width:0}#bar_num_py,#bar_num_dj,#bar_num_ml,#bar_num_db,#bar_num_pb,#bar_num_java,#bar_num_graphic,#bar_num_fsd,#bar_num_dsa{outline:none;border:none;background-color:unset;float:right;color:#fff;margin-left:20px;width:2pc}.form-style{box-shadow:0 14px 28px rgba(0,0,0,.25),0 10px 10px rgba(0,0,0,.22);border-radius:10px;background:#000;margin-top:10px;padding:30px;bottom:40px;width:100%;margin:0 auto}.input-style{margin:10px auto;width:250px;outline:none;border:none;background:0 0;color:#fff;border-bottom:3px solid #ffebcd}
-.input-style:hover{border-bottom:3px solid #4169e1;transition:1s}
+    @media only screen and (max-width: 600px) {
+    
+        #svg-footer {
+            width:100%;
+            height:30%;
+        }
+    
+        #svg-txt {
+            position:absolute;
+            left:0px;
+            right:0px;
+            z-index:inherit;
+            text-align:justify;
+            width:70% !important;
+        }
+    
+        #learnField {
+            padding-bottom:60px;
+        }
+    
+    
+    }
+    
+    
+    
+    #svg-txt {
+        position:absolute;
+        top:90px;
+        left:10px;
+        z-index:inherit;
+        margin-right:20px;
+        width:60%;
+    }
+    
+    
+    #svg-footer {
+            width:100%;
+            height:65%;
+        }
+    
+    
+    
+    #footer {
+        margin-top:30px;
+        width: 100% !important;
+        text-align: left;
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 16px;
+        bottom:0 !important;
+        position: inherit;
+    }
+    
+    /* #customcontainer {
+        min-height: 100%;
+    } */
+    
+    .header, #header {
+        margin-bottom:0px;
+    }
+    html, body {
+        background-color: #100E17 !important;
+        color: white !important;
+        overflow-x: hidden;
+        height:100%;
+        margin:0px;
+    }
+    
+    
+    /* EndHere */
+    
+    
+    a, a:hover {
+        color: white !important;
+        text-decoration: none !important;
+    }
+    
+    
+    /* Projects swiper  starts here */
+    
+    
+    .swiper {
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 50px;
+      }
+    
+      .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: 150px;
+      }
+    
+    
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+      }
+    
+    /* endhere */
+    
+    
+    /* Navbar start here */
+    
+    .navbar {
+        background-color: #201C29;
+        align-content: center;
+        height: 50px;
+        width: 100%;
+        margin: 0px auto;
+        text-align: center;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        z-index: 3;
+    }
+    
+    /* Navbar Endhere! */
+    
+    /* Big name start */
+    
+    @media only screen and (max-width: 600px) {
+    
+        #svg-footer {
+        width:100% !important;
+        height:17.5% !important;
+    }
+        .my_name {
+            width: 80% !important;
+        }
+    
+        .st0-back {
+            width: 60% !important;
+        }
+    
+        .col-small {
+            padding-bottom: 40px;
+            text-align: center;
+        }
+    
+        #project, #hide_for_sometime {
+            opacity: 0;
+        }
+    }
+    
+    #project, #hide_for_sometime {
+        opacity: 0;
+    }
+    
+    #project {
+        margin-bottom: 15px;
+    }
+    
+    .my_name {
+        padding-top: 90pt;
+        width: 50%;
+    }
+    
+    .col-small {
+        margin:0px auto;
+        text-align: center;
+    
+    }
+    
+    .heading_tag {
+        padding: 40px 0 15px 0;
+        color: white; 
+        font-family:'Amatic SC'; 
+        text-align:center;
+        font-size: 40px;
+    }
+    
+    
+    /* Skills */
+    
+    .bar {
+        height: 30px;
+        width: 0px;
+    }
+    
+    #bar_num_py, 
+    #bar_num_dj, 
+    #bar_num_ml, 
+    #bar_num_db, 
+    #bar_num_pb, 
+    #bar_num_java, 
+    #bar_num_graphic, 
+    #bar_num_fsd, 
+    #bar_num_dsa {
+        outline: none;
+        border: none;
+        background-color: unset;
+        float: right;
+        color: white;
+        margin-left: 20px ;
+        width: 2pc;
+    }
+    
+    /* EndSkills */
+    
+    /* contact me */
+    
+    .form-style {
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); 
+        border-radius: 10px;
+        background:black;
+        margin-top: 10px;
+        padding: 30px 30px 30px 30px;
+        bottom: 40px;
+        width: 100%;
+        margin: 0px auto;
+    }
+    
+    .input-style {
+        margin: 10px auto;
+        width:250px;
+        outline: none;
+        border: none;
+        background: none;
+        color: white;
+        border-bottom: 3px solid blanchedalmond;
+    }
+    
+    .input-style:hover {
+            border-bottom: 3px solid royalblue;
+            transition:1s;
+    
+    }
     
     
     /* EndContact */
@@ -503,7 +728,270 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.1.0/anime.min.js"></script>
     <script>
 
-      anime({targets:'#google',direction:'alternate',easing:'easeInOutBack',delay:2100,duration:1000,loop:true,scale:1.6});anime({targets:'.st0-front',strokeDashoffset:[anime.setDashoffset,1],duration:2500,delay:1100,direction:'alternate',easing:'easeInOutSine',loop:1,fill:'#01FFFF'});anime({targets:'#A',strokeDashoffset:[anime.setDashoffset,2],duration:2500,delay:5790,direction:'alternate',easing:'easeInOutQuad',loop:0,fill:'#FEF900'});anime({targets:'#H, #U, #M, #N',strokeDashoffset:[anime.setDashoffset,2],duration:2500,delay:4850,direction:'alternate',easing:'easeInOutSine',loop:0,fill:'#AAAAAA'});anime({targets:'#ball',translateX:10,duration:2000,direction:'alternate',easing:'easeInOutBack',delay:50,loop:true,scale:2.2});var scrollAnimation_py=anime({targets:'#python-bar',width:'{{ skills.python }}%',easing:'easeInOutBack',borderRadius:['0%','50px'],duration:2100,delay:10,autoplay:false});var scrollAnimation_dj=anime({targets:'#django-bar',width:'{{ skills.django }}%',easing:'easeInOutBack',borderRadius:['0%','50px'],duration:2200,delay:20,autoplay:false});var scrollAnimation_ht=anime({targets:'#fsd-bar',width:'{{ skills.fsd }}%',easing:'easeInOutBack',borderRadius:['0%','50px'],duration:2300,delay:30,autoplay:false});var scrollAnimation_cs=anime({targets:'#dsa-bar',width:'{{ skills.dsa }}%',easing:'easeInOutBack',borderRadius:['0%','50px'],duration:2400,delay:40,autoplay:false});var scrollAnimation_sc=anime({targets:'#ml-bar',width:'{{ skills.machine }}%',easing:'easeInOutBack',borderRadius:['0%','50px'],duration:2500,delay:50,autoplay:false});var scrollAnimation_js=anime({targets:'#db-bar',width:'{{ skills.db }}%',easing:'easeInOutBack',borderRadius:['0%','50px'],duration:2600,delay:60,autoplay:false});var scrollAnimation_psd=anime({targets:'#pb-bar',width:'{{ skills.problemSolving }}%',easing:'easeInOutBack',borderRadius:['0%','50px'],duration:2700,delay:70,autoplay:false});var scrollAnimation_ai=anime({targets:'#java-bar',width:'{{ skills.java }}%',easing:'easeInOutBack',borderRadius:['0%','50px'],duration:2800,delay:80,autoplay:false});var scrollAnimation_dsa=anime({targets:'#graphic-bar',width:'{{ skills.graphicDesign }}%',easing:'easeInOutBack',borderRadius:['0%','50px'],duration:2900,delay:90,autoplay:false});var scrollAnimation_bar_num_py=anime({targets:'#bar_num_py',value:[0,'{{ skills.python }}'],round:1,delay:10,duration:2010,easing:'easeInOutExpo',autoplay:false});var scrollAnimation_bar_num_dj=anime({targets:'#bar_num_dj',value:[0,'{{ skills.django }}'],round:1,delay:20,duration:2010,easing:'easeInOutExpo',autoplay:false});var scrollAnimation_bar_num_ht=anime({targets:'#bar_num_fsd',value:[0,'{{ skills.fsd }}'],round:1,delay:30,duration:2010,easing:'easeInOutExpo',autoplay:false});var scrollAnimation_bar_num_cs=anime({targets:'#bar_num_dsa',value:[0,'{{ skills.dsa }}'],round:1,delay:40,duration:2010,easing:'easeInOutExpo',autoplay:false});var scrollAnimation_bar_num_sc=anime({targets:'#bar_num_ml',value:[0,'{{ skills.machine }}'],round:1,delay:50,duration:2010,easing:'easeInOutExpo',autoplay:false});var scrollAnimation_bar_num_js=anime({targets:'#bar_num_db',value:[0,'{{ skills.db }}'],round:1,delay:60,duration:2010,easing:'easeInOutExpo',autoplay:false});var scrollAnimation_bar_num_psd=anime({targets:'#bar_num_pb',value:[0,'{{ skills.problemSolving }}'],round:1,delay:70,duration:2010,easing:'easeInOutExpo',autoplay:false});var scrollAnimation_bar_num_ai=anime({targets:'#bar_num_java',value:[0,'{{ skills.java }}'],round:1,delay:80,duration:2010,easing:'easeInOutExpo',autoplay:false});var scrollAnimation_bar_num_java=anime({targets:'#bar_num_graphic',value:[0,'{{ skills.graphicDesign }}'],round:1,delay:90,duration:2010,easing:'easeInOutExpo',autoplay:false});anime({targets:'#project, #hide_for_sometime',opacity:1,easing:'easeInOutBack'});
+        anime({
+            targets: '#google',
+            direction: 'alternate',
+            easing: 'easeInOutBack',
+            delay: 2100,
+            duration:1000,
+            loop:true,
+            scale:1.6,
+        });
+    
+    
+    
+        // for svg animation
+        anime({
+            targets: '.st0-front',
+            strokeDashoffset: [anime.setDashoffset, 1],
+            duration: 2500,
+            delay: 1100,
+            direction: 'alternate',
+            easing: 'easeInOutSine',
+            loop: 1,
+            fill: '#01FFFF',
+        });
+        anime({
+            targets: '#A',
+            strokeDashoffset: [anime.setDashoffset, 2],
+            duration: 2500,
+            delay: 5790,
+            direction: 'alternate',
+            easing: 'easeInOutQuad',
+            loop: 0,
+            fill: '#FEF900',
+        });
+    
+        anime({
+            targets: '#H, #U, #M, #N',
+            strokeDashoffset: [anime.setDashoffset, 2],
+            duration: 2500,
+            delay: 4850,
+            direction: 'alternate',
+            easing: 'easeInOutSine',
+            loop: 0,
+            fill: '#AAAAAA',
+        });
+        // end here svg animation 
+    
+        // Start here ball navbar-animation
+    
+        anime({
+            targets: '#ball',
+            translateX: 10,
+            duration: 2000,
+            direction: 'alternate',
+            easing: 'easeInOutBack',
+            delay: 50,
+            loop: true,
+            scale: 2.2,
+        });
+    
+        // End narbar animation Ball here
+        // Start animation of bar
+        var scrollAnimation_py = anime({
+            targets: '#python-bar',
+            width: '{{ skills.python }}%',
+            easing: 'easeInOutBack',
+            borderRadius: ['0%', '50px'],
+            duration: 2100,
+            delay: 10,
+            autoplay: false,
+        });
+    
+        var scrollAnimation_dj = anime({
+            targets: '#django-bar',
+            width: '{{ skills.django }}%',
+            easing: 'easeInOutBack',
+            borderRadius: ['0%', '50px'],
+            duration: 2200,
+            delay: 20,
+            autoplay: false,
+    
+        });
+    
+        var scrollAnimation_ht = anime({
+            targets: '#fsd-bar',
+            width: '{{ skills.fsd }}%',
+            easing: 'easeInOutBack',
+            borderRadius: ['0%', '50px'],
+            duration: 2300,
+            delay: 30,
+            autoplay: false,
+        });
+    
+        var scrollAnimation_cs = anime({
+            targets: '#dsa-bar',
+            width: '{{ skills.dsa }}%',
+            easing: 'easeInOutBack',
+            borderRadius: ['0%', '50px'],
+            duration: 2400,
+            delay: 40,
+            autoplay: false,
+    
+        });
+    
+        var scrollAnimation_sc = anime({
+            targets: '#ml-bar',
+            width: '{{ skills.machine }}%',
+            easing: 'easeInOutBack',
+            borderRadius: ['0%', '50px'],
+            duration: 2500,
+            delay: 50,
+            autoplay: false,
+    
+        });
+    
+        var scrollAnimation_js = anime({
+            targets: '#db-bar',
+            width: '{{ skills.db }}%',
+            easing: 'easeInOutBack',
+            borderRadius: ['0%', '50px'],
+            duration: 2600,
+            delay: 60,
+            autoplay: false,
+    
+        });
+    
+        var scrollAnimation_psd = anime({
+            targets: '#pb-bar',
+            width: '{{ skills.problemSolving }}%',
+            easing: 'easeInOutBack',
+            borderRadius: ['0%', '50px'],
+            duration: 2700,
+            delay: 70,
+            autoplay: false,
+        });
+    
+        var scrollAnimation_ai = anime({
+            targets: '#java-bar',
+            width: '{{ skills.java }}%',
+            easing: 'easeInOutBack',
+            borderRadius: ['0%', '50px'],
+            duration: 2800,
+            delay: 80,
+            autoplay: false,
+        });
+    
+        var scrollAnimation_dsa = anime({
+            targets: '#graphic-bar',
+            width: '{{ skills.graphicDesign }}%',
+            easing: 'easeInOutBack',
+            borderRadius: ['0%', '50px'],
+            duration: 2900,
+            delay: 90,
+            autoplay: false,
+        });
+    
+    
+        // animation number_bar
+        // Number animation, values
+        var scrollAnimation_bar_num_py = anime({
+            targets: '#bar_num_py',
+            value: [0, '{{ skills.python }}'],
+            round: 1,
+            delay: 10,
+            duration: 2010,
+            easing: 'easeInOutExpo',
+            autoplay: false,
+        })
+    
+        var scrollAnimation_bar_num_dj = anime({
+            targets: '#bar_num_dj',
+            value: [0, '{{ skills.django }}'],
+            round: 1,
+            delay: 20,
+            duration: 2010,
+            easing: 'easeInOutExpo',
+            autoplay: false,
+        });
+    
+        var scrollAnimation_bar_num_ht = anime({
+            targets: '#bar_num_fsd',
+            value: [0, '{{ skills.fsd }}'],
+            round: 1,
+            delay: 30,
+            duration: 2010,
+            easing: 'easeInOutExpo',
+            autoplay: false,
+        });
+    
+        var scrollAnimation_bar_num_cs = anime({
+            targets: '#bar_num_dsa',
+            value: [0, '{{ skills.dsa }}'],
+            round: 1,
+            delay: 40,
+            duration: 2010,
+            easing: 'easeInOutExpo',
+            autoplay: false,
+        });
+    
+        var scrollAnimation_bar_num_sc = anime({
+            targets: '#bar_num_ml',
+            value: [0, '{{ skills.machine }}'],
+            round: 1,
+            delay: 50,
+            duration: 2010,
+            easing: 'easeInOutExpo',
+            autoplay: false,
+        });
+    
+        var scrollAnimation_bar_num_js = anime({
+            targets: '#bar_num_db',
+            value: [0, '{{ skills.db }}'],
+            round: 1,
+            delay: 60,
+            duration: 2010,
+            easing: 'easeInOutExpo',
+            autoplay: false,
+        });
+
+        var scrollAnimation_bar_num_psd = anime({
+            targets: '#bar_num_pb',
+            value: [0, '{{ skills.problemSolving }}'],
+            round: 1,
+            delay: 70,
+            duration: 2010,
+            easing: 'easeInOutExpo',
+            autoplay: false,
+        })
+    
+        var scrollAnimation_bar_num_ai = anime({
+            targets: '#bar_num_java',
+            value: [0, '{{ skills.java }}'],
+            round: 1,
+            delay: 80,
+            duration: 2010,
+            easing: 'easeInOutExpo',
+            autoplay: false,
+        })
+    
+        var scrollAnimation_bar_num_java = anime({
+            targets: '#bar_num_graphic',
+            value: [0, '{{ skills.graphicDesign }}'],
+            round: 1,
+            delay: 90,
+            duration: 2010,
+            easing: 'easeInOutExpo',
+            autoplay: false,
+        })
+    
+         
+    
+        // have Ended all animation here
+    
+        // hiding the project name
+    
+        // Turn on in production
+    
+        anime({
+            targets: '#project, #hide_for_sometime',
+            opacity: 1,
+            // delay: 6000,
+            // duration: 1290,
+            easing: 'easeInOutBack',
+        });
+    
     </script>
     
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
